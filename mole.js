@@ -2,6 +2,7 @@ let currMoleTile;
 let currPlantTile;
 let score = 0;
 let gameOver = false;
+let timer = 50; //set the initial timer in seconds
 
 window.onload = function() {
     setGame();
@@ -77,4 +78,16 @@ function selectTile() {
         gameOver = true;
     }
 }
+/*
+const countdown = setInterval(() => {
+    timer--;//Decrease the timer by 1
+    //update the timer display on your HTML
+
+    IF (timer === 0){
+        clearInterval(countdown);//stop the timer when it reaches 0
+
+
+
+    }
+    }, 1000)*/
 
